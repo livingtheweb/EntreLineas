@@ -1,0 +1,174 @@
+html{
+	font-size: 62.5%;
+	overflow-y: scroll;
+}
+
+body{
+	position: relative;
+	font-size: 10px;
+	font-family: $base-font;
+	color: $dark-blue;
+}
+
+input, input:focus,
+textarea, textarea:focus,
+button, button:focus {
+	outline: 0;
+	border: none;
+}
+
+ul{
+	list-style: none;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+a:visited {
+	color: $dark-blue;
+}
+
+img, video {
+	object-fit: cover;
+}
+
+b, strong {
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.co_dark-blue {
+	color: $dark-blue;
+}
+.bg_dark-blue {
+	background-color: $dark-blue;
+}
+.bo_dark-blue {
+	border-color: $dark-blue;
+}
+
+.co_light-blue {
+	color: $light-blue;
+}
+.bg_light-blue {
+	background-color: $light-blue;
+}
+.bo_light-blue {
+	border-color: $light-blue;
+}
+
+.co_light-gray {
+	color: $light-gray;
+}
+.bg_light-gray {
+	background-color: $light-gray;
+}
+.bo_light-gray {
+	border-color: $light-gray;
+}
+
+.co_dark-orange {
+	color: $dark-orange;
+}
+.bg_dark-orange {
+	background-color: $dark-orange;
+}
+.bo_dark-orange {
+	border-color: $dark-orange;
+}
+
+.co_bright-orange {
+	color: $bright-orange;
+}
+.bg_bright-orange {
+	background-color: $bright-orange;
+}
+.bo_bright-orange {
+	border-color: $bright-orange;
+}
+
+.co_light-orange {
+	color: $light-orange;
+}
+.bg_light-orange {
+	background-color: $light-orange;
+}
+.bo_light-orange {
+	border-color: $light-orange;
+}
+
+.co_tomba-blue {
+	color: $tomba-blue;
+}
+.bg_tomba-blue {
+	background-color: $tomba-blue;
+}
+.bo_tomba-blue {
+	border-color: $tomba-blue;
+}
+
+.co_tomba-lgblue {
+	color: $tomba-lgblue;
+}
+.bg_tomba-lgblue {
+	background-color: $tomba-lgblue;
+}
+.bo_tomba-lgblue {
+	border-color: $tomba-lgblue;
+}
+
+.co_lepra-purple {
+	color: $lepra-purple;
+}
+.bg_lepra-purple {
+	background-color: $lepra-purple;
+}
+.bo_lepra-purple {
+	border-color: $lepra-purple;
+}
+
+.co_lepra-lgpurple {
+	color: $lepra-lgpurple;
+}
+.bg_lepra-lgpurple {
+	background-color: $lepra-lgpurple;
+}
+.bo_lepra-lgpurple {
+	border-color: $lepra-lgpurple;
+}
+
+.co_lobo-black {
+	color: $lobo-black;
+}
+.bg_lobo-black {
+	background-color: $lobo-black;
+}
+.bo_lobo-black {
+	border-color: $lobo-black;
+}
+
+#preloader {
+	z-index: 1000000 !important;
+}
+
+.widget {
+	margin: 0 0 0 0;
+	img {
+		width: 100%;
+	}
+	figure {
+		margin: 0;
+	}	
+}
+
+.tooltip {
+	font-size: 1.2rem;
+}
+
+.page {
+	margin: 0 0 0rem !important;
+}
+
+
+
+

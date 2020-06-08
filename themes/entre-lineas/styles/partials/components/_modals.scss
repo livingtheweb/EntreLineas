@@ -1,0 +1,25 @@
+
+.modal {
+
+	.modal-body {
+		margin-bottom: 25px;
+
+		h6 {
+			font-size: 1.07rem;
+			letter-spacing: .07rem;
+		}
+
+		.text {
+			@include text;
+		}
+
+	}
+
+	.modal-footer {
+		font-size: 1.2rem;
+		a:visited {
+			color: #f8f9fa;
+		}
+	}	
+
+}

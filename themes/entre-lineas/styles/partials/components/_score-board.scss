@@ -1,0 +1,34 @@
+
+.score-board {
+	width: 100%;
+	height: 64px;
+
+	.board {
+		height: 64px;
+
+		.board-title {
+			height: 100%;
+			font-size: 1.25rem;
+			font-weight: 900;
+			letter-spacing: .05rem;
+		}
+
+		.board-match {
+			height: 100%;
+			position: relative;
+			font-size: 1.2rem;
+			font-weight: 500;
+			cursor: default;
+		}		
+	}
+
+	.pointer {
+		display: none;
+	}
+
+	.jugando {
+		background-color: lightgray;
+		display: block !important;
+	}
+
+}

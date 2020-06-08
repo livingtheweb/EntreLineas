@@ -1,0 +1,109 @@
+
+.navbar {
+	width: 100%;
+	min-height: 147px;
+	z-index: 1030;
+
+	.navbar-thumbnail {
+		cursor: pointer;
+		.thumbnail-title {
+			@include head-accent-sm;
+		}
+		.thumbnail-link {
+			height: 95%;
+			transform: rotate(-2deg);
+			.link-overlay {
+				width: 100%;
+				height: 100%;
+				background-color: rgba(255,136,55,.8);
+				opacity: 0;
+				.overlay-title {
+					@include head-sm;
+				}
+				.img_soccer-ball {
+					width: auto;
+					height: 90px;
+				}
+			}
+			.link-img {
+				width: 150px;
+				height: 110px;
+				border-width: 5.25px;
+				border-style: solid;
+			}
+			&:hover {
+				transform: rotate(0);
+			}
+			&:hover .link-overlay {
+				opacity: 1;
+			}
+			&:hover .link-img {
+				border-color: $light-orange;
+			}
+		}	
+	}
+
+	.navbar-teams {
+		.teams-link,
+		.link-img {
+			width: 70px;
+			height: 70px;
+			min-width: 70px;
+		}
+		.teams-link {
+			.link-overlay {
+				width: 100%;
+				height: 100%;
+				padding-top: 23px;
+				color: #ffffff;
+				font-family: $accent-font;
+				font-size: 1.6rem;
+				letter-spacing: .1rem;
+				opacity: 0;
+			}
+			.link-overlay__tomba { background-color: rgba(34,60,141,.8); }
+			.link-overlay__lepra { background-color: rgba(42,25,114,.8); }
+			.link-overlay__lobo  { background-color: rgba(0,0,0,.8); }
+			&:hover {
+				transform: scale(1.12);
+			}
+			&:hover .link-overlay {
+				opacity: 1;
+			}
+		}	
+	}
+
+	.navbar-menu {
+		.menu-date::first-letter {
+			text-transform: uppercase;
+		}
+		.navbar-nav {
+			.nav-item {
+				border-top-width: 3px;
+				border-top-style: solid;
+				border-top-color: transparent;
+				&.active {
+					border-top-color: $bright-orange;
+				} 
+				.nav-link {
+					font-size: 1.2rem;
+				}
+			}
+		}	
+	}
+
+	.navbar-social {
+		.social-claim {
+			font-size: 1.2rem;
+			letter-spacing: .05rem;
+		}
+		.social-icons {
+			.icon-link, 
+			.icon-img {
+				width: 24px;
+				height: 24px;
+			}
+		}	
+	}
+
+}

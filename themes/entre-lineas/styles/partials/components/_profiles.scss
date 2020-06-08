@@ -1,0 +1,67 @@
+
+.profiles {
+	margin-top: 100px;
+	margin-bottom: 75px;
+
+	.profiles-box {
+		.box-head {
+			@include head-accent-md;
+			font-weight: 900;
+		}
+
+		.box-main {
+			border-top: 6px solid #ffffff;
+			border-bottom: 6px solid #ffffff;
+
+			.main-head {
+				@include head-sm;
+				font-size: 1.5rem;
+			}
+
+			p {
+				margin-bottom: 14px;
+				font-size: 1.4rem;
+				line-height: 1.9rem;
+			}
+
+			.main-blockquote {
+				@include blockquote;
+			}
+
+			.main-img {
+				width: 100%;
+				min-height: 375px;
+			}
+
+			.more-link {
+				span {
+					display: inline-block;
+					margin-top: 5px;
+					color: $light-gray;
+				}	
+			}
+		}
+
+		.box-footer {
+			.footer-link {
+				.link-img {
+					width: 200px;
+					height: 200px;
+				}
+				.link-overlay {
+					height: 100%;
+					top: 0;
+					background-color: rgba(26,33,43,.8);
+					font-size: 1.6rem;
+					line-height: 1.8rem;
+					opacity: 0;
+					transition: all 200ms linear;
+					&:hover {
+						opacity: 1;
+					}
+				}	
+			}
+		}
+	}
+
+}

@@ -1,0 +1,44 @@
+
+.multimedia {
+	margin-top: 200px;
+	margin-bottom: 100px;
+	
+	.multimedia-box {
+
+		.box-head {
+		    color: #ffffff;
+		    font-size: 2rem;
+		    font-weight: 900;
+		    letter-spacing: .15rem;
+		    line-height: 1.6rem;
+		    text-transform: uppercase;
+		}
+
+		.box-videos {
+			border-bottom-width: 4px;
+			border-bottom-style: solid; 
+		}
+		
+		.box-social {
+			font-size: 1.4rem;
+			
+			.social-link {
+				& span {
+					border-width: 0 0 1px 0;
+					border-style: solid;
+				}
+			}	
+			.social-link:hover {
+				color: $bright-orange;
+			}
+			.social-link:active {
+				transform: scale(1.025);
+			}
+			.social-link:visited {
+				color: $bright-orange;
+			}
+		}
+
+	}	
+
+}

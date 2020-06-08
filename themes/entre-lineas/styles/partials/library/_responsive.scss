@@ -1,0 +1,339 @@
+// Extra small devices (phones)
+@media (max-width: 575.98px) { 
+
+	.cover {
+
+		.cover-main {
+			.main-head {
+				font-size: 4rem;
+				line-height: 4.5rem;
+			}
+			.main-subhead {
+				width: 100%;
+			}
+		}
+
+		.cover-secondary {
+			.secondary-head {
+				font-size: 3rem;
+				line-height: 3.5rem;
+			}
+
+		}
+
+		.cover-statics {
+			.statics-box {
+				width: 100%;
+			}
+		}	
+
+	}
+
+
+	.mixed-news {
+
+		.news {
+			margin-bottom: 30px;
+			.news-head {
+				border-top: 0 !important;
+				border-bottom: 4px solid $bright-orange;
+				font-size: 3rem;
+				line-height: 3.5rem;
+			}
+		}
+
+	}	
+
+
+	.teams-statics {  
+
+		.box-table {
+			.box-table-cell {
+				.truncate {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+		}
+
+	}	
+
+
+	.footer {
+
+		.footer-content {
+			margin-top: 200px;
+			padding: 15px 25px;
+		}	
+
+		.footer-form {
+			margin-top: 75px;
+			margin-bottom: 100px;
+		}	
+		
+	}
+
+
+}
+
+// Small devices (phones)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+	.nav-pages {
+		.nav-wrapper {
+			width: 100%;
+		}
+	}
+
+	.nav-scroll {
+
+		.scroll-brand,
+		.scroll-teams,
+		.scroll-menu {
+			width: auto;
+		}
+
+	}	
+	
+	.cover {
+
+		.cover-statics {
+			.statics-box {
+				width: 45%;
+			}
+		}
+
+	}
+
+	.mixed-news {
+
+		.news {
+			margin-bottom: 30px;
+			.news-head {
+				border-top: 0 !important;
+				border-bottom: 4px solid $bright-orange;
+			}
+		}
+
+	}	
+
+	.footer {
+
+		.footer-form {
+			margin-top: 75px;
+			margin-bottom: 100px;
+		}	
+		
+	}
+
+}
+
+// Medium devices (tablets)
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	.cover {
+
+		.cover-statics {
+			.statics-box {
+				width: 32%;
+			}
+		}
+
+	}
+
+	.mixed-news {
+
+		.news-head {
+			font-size: 3rem;
+			line-height: 3.5rem;
+		}
+
+	}	
+
+	.footer {
+
+		.footer-form {
+			margin-bottom: 100px;
+		}	
+		
+	}
+
+}
+
+// Large devices (desktops)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+	.cover {
+
+		.cover-statics {
+			.statics-box {
+				width: 45%;
+			}
+		}
+
+	}
+
+	.mixed-news {
+		
+		.news-head {
+			font-size: 3rem;
+			line-height: 3.5rem;
+		}
+
+		.news-link {
+			.news-subhead {
+				font-size: 1.2rem;
+				line-height: 1.4rem;
+			}	
+		}
+
+	}	
+	
+
+	.profiles {
+
+		.profiles-box {
+				.main-blockquote {
+					width: 75%;
+				}
+			}
+
+	}
+
+
+	.teams-statics {
+
+		.box-table {
+			.box-table-cell {
+				.truncate {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+		}
+
+	}	
+
+
+	.sidebar {	
+		.sidebar-box {
+			.box-statics.matches {
+				.match-teams {
+					.team {
+						max-width: 95%;
+						overflow: hidden;
+					    text-overflow: ellipsis;
+					    white-space: nowrap;
+					}
+					.scorers {
+						max-width: 100px;
+					}
+				}	
+			}	
+
+		}
+	
+	}
+
+	.opened {
+		.article-text {
+			column-count: 2;
+			column-gap: 20px;
+		}
+	}
+
+}
+
+// Extra large devices (large desktops)
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+	
+	.cover {
+
+		.cover-statics {
+			.statics-box {
+				width: 32%;
+			}
+		}
+
+	}
+
+	.sidebar {	
+		.sidebar-box {
+			.box-statics.matches {
+				.match-teams {
+					.scorers {
+						max-width: 140px;
+					}
+				}	
+			}	
+
+		}
+	
+	}
+
+	.opened {
+		.article-text {
+			column-count: 2;
+			column-gap: 20px;
+		}
+	}
+
+}
+
+// Extra large and extra wide devices (large desktops)
+@media (min-width: 1500px) {
+
+	.cover {
+
+		.cover-main {
+			.main-subhead {
+				width: 75%;
+			}
+		}
+
+		.cover-statics {
+			.statics-box {
+				width: 32%;
+			}
+		}
+
+	}
+
+	.sidebar {	
+		.sidebar-box {
+			.box-statics.matches {
+				.match-teams {
+					.scorers {
+						max-width: 170px;
+					}
+				}	
+			}	
+
+		}
+	
+	}
+
+	.profiles {
+		.profiles-box {
+			.box-footer {
+
+				.link-img {
+					width: auto;
+					height: 250px;
+				}
+
+			}
+		}
+	}
+
+	.opened {
+		.article-text {
+			column-count: 2;
+			column-gap: 20px;
+		}
+	}
+
+
+}

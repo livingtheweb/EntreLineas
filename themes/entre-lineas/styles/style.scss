@@ -1,0 +1,30 @@
+
+@import "partials/library/variables";
+@import "partials/library/mixins";
+
+/* SETTINGS
+============ */
+@import "partials/library/settings";
+
+/* COMPONENTS
+============== */ 
+@import "partials/components/score-board";
+@import "partials/components/carousel";
+@import "partials/components/navbar";
+@import "partials/components/nav-pages";
+@import "partials/components/nav-scroll";
+@import "partials/components/cover";
+@import "partials/components/mixed-news";
+@import "partials/components/profiles";
+@import "partials/components/sidebar";
+@import "partials/components/multimedia";
+@import "partials/components/teams";
+@import "partials/components/opened";
+@import "partials/components/footer";
+@import "partials/components/modals";
+
+@import "partials/library/reset";
+
+/* MEDIA QUERIES
+================= */
+@import "partials/library/responsive";

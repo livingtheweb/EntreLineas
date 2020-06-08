@@ -1,0 +1,229 @@
+.teams-header {
+	height: 350px;
+	margin-bottom: 160px;
+	
+	.stripes {
+		opacity: .2;
+	}
+
+	.header-title {
+		width: 250px;
+		position: absolute;
+		bottom: 95px;
+		left: 50%;
+		margin-left: -125px;
+		font-family: $accent-font;
+		font-size: 5rem;
+		font-weight: 700;
+	}
+
+	.header-badge {
+		width: 170px;
+		min-width: 170px;
+		height: 170px;
+		position: absolute;
+		bottom: -55px; 
+		left: 50%;
+		margin-left: -85px;
+	}
+
+}
+
+.teams-cover {
+	margin-bottom: 150px;
+
+	.cover-main {
+		
+		.main-head {
+			
+			a:hover {
+				color: $bright-orange;
+			}
+
+			a:visited {
+				color: $bright-orange;
+			}
+
+		}
+
+	}
+}
+
+.teams-content {
+
+	.next-opponent {
+
+		.opponent-box {
+			min-height: 400px;
+
+			.box-head {
+				@include head-accent-md;
+			}
+
+			.box-main {
+				border-top: 4px solid #ffffff;
+				border-bottom: 4px solid #ffffff;
+
+				.main-img {
+					min-height: 130px;
+				}
+
+				.main-info {
+					.info-title {
+						@include head-sm;
+					}
+					.info-text {
+						font-size: 1.4rem;
+						line-height: 2rem;
+					}
+				}
+			}
+
+			.card {
+				min-height: 170px;
+				& div {
+					min-height: 170px;
+				}
+
+				.card-title {
+					font-size: 2rem;
+					font-weight: 900;
+					line-height: 2.2rem;
+				}
+				.card-text {
+					font-weight: 300;
+					line-height: 1.6rem;
+				}
+				small {
+					font-size: 1rem;
+				}
+				a.title-tomba:visited {
+					color: $tomba-blue;
+				}
+				a.title-lepra:visited {
+					color: $lepra-purple;
+				}
+				a.title-lobo:visited {
+					color: $lobo-black;
+				}
+			}
+
+		}	
+
+	}
+
+}
+
+.teams-statics {
+	margin: 75px 0;
+
+	.campaign, .squad {
+		.box-head {
+			@include head-sm;
+		}
+	}
+
+	// .campaign-box, .squad-box {
+	// 	height: 600px; 
+	// }
+
+	.campaign-box {
+
+		.box-table {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0;
+		}
+		.box-table-cell {
+			box-sizing: border-box;
+			width: 100%;
+			padding: 0.4rem 0.6rem;
+			overflow: hidden;
+			list-style: none;
+			border: solid 2px white;
+			background: rgba(112, 128, 144, 0.2);
+
+			&.box-table-cell__dark {
+				background-color: slategrey;
+				color: white;
+			}
+
+			&.text {
+				font-size: 1.2rem;
+				line-height: 1.36rem;
+			}
+
+			span {
+				cursor: default;
+			}
+		}
+		.box-table-cell > h1,
+		.box-table-cell > h2,
+		.box-table-cell > h3,
+		.box-table-cell > h4,
+		.box-table-cell > h5,
+		.box-table-cell > h6 {
+			margin: 0;
+		}
+
+		.box-table__2cols > .box-table-cell {
+			width: 50%;
+		}
+		.box-table__3cols > .box-table-cell {
+			width: 33.33%;
+		}
+		.box-table__4cols > .box-table-cell {
+			width: 25%;
+		}
+		.box-table__5cols > .box-table-cell {
+			width: 20%;
+		}
+		.box-table__6cols > .box-table-cell {
+			width: 16.6%;
+		}
+
+	}
+
+	.squad-box {
+		font-size: 1.2rem;
+
+		.box-nav {
+			.nav-link {
+				color: $light-gray;
+				&.active {
+					color: $dark-blue;
+				}
+			}
+
+			.nav-tabs .nav-item.show .nav-link, 
+			.nav-tabs .nav-link.active {
+				background-color: #f8f9fa;
+				border-color: #dee2e6 #dee2e6 #f8f9fa;
+				font-weight: 500;
+			}
+		}
+
+		.box-content {
+			max-height: calc(100% - 70px);
+			overflow: auto;
+			.card {
+				width: 150px;
+				.card-img-top {
+					width: 150px;
+					height: 130px;
+				}
+				.card-link {
+					width: 20px;
+					height: 20px;
+					cursor: pointer;
+					transition: all 400ms ease;
+					&:hover {
+						transform: scale(1.15);
+					}
+				}
+			}
+		}
+
+	}
+
+}

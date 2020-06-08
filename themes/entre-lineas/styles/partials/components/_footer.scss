@@ -1,0 +1,143 @@
+
+.footer {
+	margin-top: 400px;
+	
+	.footer-content {
+		padding: 30px 50px 130px 50px;
+
+		.footer-nav {
+
+			.nav-brand {
+				margin-bottom: 70px;
+			}
+
+			.nav-teams {
+				margin-bottom: 50px;
+				.teams-link,
+				.link-img {
+					width: 70px;
+					min-width: 70px;
+					height: 70px;
+				}
+				.teams-link {
+					.link-overlay {
+						width: 100%;
+						height: 100%;
+						padding-top: 23px;
+						color: #ffffff;
+						font-family: $accent-font;
+						font-size: 1.6rem;
+						letter-spacing: .1rem;
+						opacity: 0;
+					}
+					.link-overlay__tomba { background-color: rgba(34,60,141,.8); }
+					.link-overlay__lepra { background-color: rgba(42,25,114,.8); }
+					.link-overlay__lobo  { background-color: rgba(0,0,0,.8); }
+					&:hover {
+						transform: scale(1.12);
+					}
+					&:hover .link-overlay {
+						opacity: 1;
+					}
+				}	
+
+			}
+
+			.nav-menu {
+				.nav-item {
+					border-top-width: 3px;
+					border-top-style: solid;
+					border-top-color: transparent;
+					&.active {
+						border-top-color: $light-gray;
+					} 
+					.nav-link {
+						font-size: 1.2rem;
+					}
+				}
+			}
+
+			.nav-social {
+				.social-claim {
+					font-size: 1.2rem;
+					letter-spacing: .05rem;
+				}
+				.social-icons {
+					.icon-link, 
+					.icon-img {
+						width: 24px;
+						height: 24px;
+					}
+				}	
+			}
+
+			.button-up {
+				margin-top: 50px;
+				.up-img {
+					width: 35px;
+				}
+				.up-link {
+					font-size: 1.2rem;
+				}
+			}
+
+		}
+
+		.footer-form {
+			max-width: 800px;			
+
+			.form-head {
+				@include head-accent-md;
+				font-size: 1.8rem;
+				font-weight: 900;
+			}
+
+			.form-label {
+				font-size: 1.3rem;
+			}
+
+			.form-control {
+				border-color: $dark-blue;
+				border-width: 1.5px;
+				border-radius: 0;
+				font-size: 1.3rem;
+				&:focus {
+					background: none;
+					border: 1.5px solid #495057;
+					box-shadow: none;
+				}
+			}
+
+			input {
+				height: calc(.75em + .75rem + 2px);
+			}
+
+			textarea {
+				resize: none;
+			}
+
+			.btn-send {
+				min-width: 100px;
+				min-height: 30px;
+				font-size: 1.4rem;
+				font-weight: 500;
+				&:hover {
+					background-color: $light-blue;
+					color: $dark-blue;
+				}
+			}
+
+		}
+
+	}	
+
+}
+
+.footer-small {
+	
+	.footer-content {
+		padding: 30px 50px 65px 50px !important;
+
+	}	
+
+}

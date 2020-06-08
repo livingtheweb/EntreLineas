@@ -1,0 +1,102 @@
+
+.sidebar {
+
+	.sidebar-box {
+
+		.box-head {
+			@include head-sm;
+		}
+
+		.box-statics {
+			&.positions {
+				min-height: 800px;
+			}
+			&.scorers {
+				min-height: 250px;
+			}
+			.nav-tabs {
+				.nav-item.show .nav-link,
+				.nav-link.active {
+					background-color: #f8f9fa;
+					border-color: #dee2e6 #dee2e6 #f8f9fa;
+					color: $dark-blue;
+					font-size: 1.3rem;
+					font-weight: 500;
+				}
+				.nav-link {
+					color: $light-gray;
+					font-size: 1.3rem;
+				}
+			}
+			.tab-pane {
+				font-size: 1.2rem;
+			}
+		}
+
+		.box-article {
+			// height: 400px;
+			height:auto;
+			cursor: pointer;
+			transition: all 100ms linear;
+			&:hover.article__home {
+				background-color: $bright-orange;
+				a {
+					color: $dark-blue;
+					transition: all 250ms linear;
+					&:hover {
+						color: $light-blue;
+					}	
+				}
+			}
+			&:hover.article__tomba {
+				background-color: $tomba-blue;
+				color: #f8f9fa;
+				a { 
+					color: #f8f9fa !important; 
+					transition: all 250ms linear;
+					&:hover {
+						color: $tomba-lgblue !important;
+					}
+				}
+			}
+			&:hover.article__lepra {
+				background-color: $lepra-purple;
+				color: #f8f9fa;
+				a { 
+					color: #f8f9fa !important; 
+					transition: all 250ms linear;
+					&:hover {
+						color: $lepra-lgpurple !important;
+					}
+				}
+			}
+			&:hover.article__lobo {
+				background-color: $lobo-black;
+				color: #f8f9fa;
+				a { 
+					color: #f8f9fa !important; 
+					transition: all 250ms linear;
+					&:hover {
+						color: $light-gray !important;
+					}
+				}
+			}
+			.article-head {
+				@include head-accent-md;
+				border-bottom: 5px solid #ffffff;
+			}
+			.article-title {
+				@include head-lg;
+			}
+			.article-author {
+				@include head-accent-sm;
+			}
+			.article-img {
+				width: 130px;
+				height: 130px;
+			}
+		}
+
+	}
+
+}

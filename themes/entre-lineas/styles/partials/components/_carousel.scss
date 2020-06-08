@@ -1,0 +1,15 @@
+
+.carousel {
+	z-index: 1030;
+
+	.carousel-statement {
+		font-size: 1.2rem;
+		letter-spacing: .05rem;
+	}
+
+	.carousel-control-prev-icon,
+	.carousel-control-next-icon {
+		background-size: 70%;
+	}
+	
+}
